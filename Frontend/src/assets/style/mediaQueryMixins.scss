@@ -1,0 +1,24 @@
+// Mobile devices
+$mobile: 480px;
+// iPads, Tablets
+$tablets: 768px;
+// Small screens, laptops
+$laptops: 1024px;
+
+
+@mixin mobileScreen {
+    @media (max-width : $mobile) {
+        @content
+    }
+};
+@mixin tabletScreen {
+    @media (max-width : $tablets) {
+        @content
+    }
+};
+
+@mixin laptopScreen {
+    @media (max-width : $laptops) {
+        @content
+    }
+}
